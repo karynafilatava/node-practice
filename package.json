@@ -1,0 +1,30 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "simple todo-list application",
+  "main": "todolist.js",
+  "dependencies": {
+    "commander": "^2.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "preread": "node todolist add title body",
+    "read": "node todolist read title",
+    "postread": "node todolist remove title",
+
+    "preaddfail": "node todolist add title body",
+    "addfail": "node todolist add title body",
+    "postaddfail": "node todolist remove title",
+
+    "preremove": "node todolist add title body",
+    "remove": "node todolist remove title",
+    "postremove": "node todolist read title",
+    
+    "list": "node todolist list"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "Karyna Filatava",
+  "license": "ISC"
+}
